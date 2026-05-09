@@ -16,11 +16,12 @@ snapcraft pack
 
 ## Updating the version
 
-The version is pinned in `snap/snapcraft.yaml` — the version string in each
-source URL (currently `1.14.41`).
+The version is pinned in `snap/snapcraft.yaml` in two places:
 
-To update to a new upstream release, change the version in all source URLs and
-commit.
+- `version: <x.y.z>`
+- the release tag in each source URL (`.../download/v<x.y.z>/...`)
+
+To update to a new upstream release, keep both values in sync.
 
 ## Testing with spread
 

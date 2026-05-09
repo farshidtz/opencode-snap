@@ -16,6 +16,20 @@
       "datasourceTemplate": "github-releases",
       "depNameTemplate": "anomalyco/opencode",
       "versioningTemplate": "semver"
+    },
+    {
+      "customType": "regex",
+      "description": "Update anomalyco/opencode snap version",
+      "managerFilePatterns": [
+        "^snap/snapcraft\\.yaml$"
+      ],
+      "matchStrings": [
+        "^version:\\s(?<currentValue>\\d+\\.\\d+\\.\\d+)$"
+      ],
+      "datasourceTemplate": "github-releases",
+      "depNameTemplate": "anomalyco/opencode",
+      "extractVersionTemplate": "^v(?<version>.+)$",
+      "versioningTemplate": "semver"
     }
   ]
 }
