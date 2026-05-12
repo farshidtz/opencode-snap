@@ -24,8 +24,8 @@ parts:
   opencode:
     plugin: dump
     source:
-      - on amd64 to amd64: https://github.com/anomalyco/opencode/releases/download/v1.14.41/opencode-linux-x64-baseline.tar.gz
-      - on arm64 to arm64: https://github.com/anomalyco/opencode/releases/download/v1.14.41/opencode-linux-arm64.tar.gz
+      - on amd64 to amd64: https://github.com/anomalyco/opencode/releases/download/v1.14.48/opencode-linux-x64-baseline.tar.gz
+      - on arm64 to arm64: https://github.com/anomalyco/opencode/releases/download/v1.14.48/opencode-linux-arm64.tar.gz
     source-type: tar
     override-pull: |
       craftctl default
